@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Weather report for the city of Preston with local news.">
+    <title>Weather Site.</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito%7cUbuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+
+    <script src="js/fonts.js"></script>
+
+    <script src="js/windChill.js"></script>
+    <script src="js/responsive.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/small.css">
+    <link type="text/css" rel="stylesheet" href="css/medium.css">
+    <link type="text/css" rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="renderDate(); loadTowns(); loadFonts();">
+    <div id="top">
+        <div class="message">
+            <h3>Saturday = Preston Pancakes in the Park!</h3>
+            <h3>9:00 am Friday at the city park.</h3>
+        </div>
+        <header><img src="images/icon2.png" alt="logo">
+            <div class="headings">
+                <h1>Weather M Site</h1>
+                <div class="subtitles">Weather information made sky clear.</div>
+            </div>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="buttom" onclick="toggleMenu()">&#9776;</a></li>
+                <li class="active"><a href="https://carlosdgerez.github.io/lesson-11/" target="_blank">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html" target="_blank">Soda
+                        Springs</a></li>
+                <li><a href="fishhaven.html" target="_blank">Fish
+                        Haven</a> </li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <a>
+            </a>
+        </nav>
+    </div>
+    <main>
+        <div id='todaystory'>
+            <h1> Welcome to your Local Weather site.</h1>
+            <h2>Todays story</h2>
+
+            <h3>Franklin County Air Advisory issued Preston, ID | Idaho8.com | 01-21 PRESTON, Idaho (KIFI/KIDK) - The Idaho Department of Environmental Quality issued an "Air Quality Advisory" for residents of Franklin County Tuesday. IDEQ says a stagnant
+                atmosphere and elevated pollutant levels may create adverse health effects as a result of degraded air quality. From newsbreak.com</h3>
+        </div>
+        <div class="cards"></div>
+        <section class="midle">
+            <div class="grid clearfix">
+                <div class="headingmap">
+                    <iframe class="mapsmall" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d47369.91461977414!2d-111.90718304154487!3d42.09419786632367!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1593806687196!5m2!1sen!2s" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0" width="305" height="285"></iframe>
+                    <iframe class="maplarge" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d47369.91461977414!2d-111.90718304154487!3d42.09419786632367!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1593806687196!5m2!1sen!2s" width="400" height="410" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="contain">
+                    <div class="contact">
+                        <h5 class="firstline">Weather M Site</h5>
+                        <h5>30 N 1st E</h5>
+                        <h5>Preston, ID 83263</h5>
+                        <h5> &#x260E; 999.999.9999</h5>
+                        <h5>www.watwind.com</h5>
+                        <div class="contacticons">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/facebook.png" alt="facebook logo"></a>
+                            <a href="https://no.pinterest.com/" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/pinterest.png" alt="pinterest logo logo">
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/youtube.png" alt="youtube logo">
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/twiter.png" alt="youtube logo">
+                            </a>
+                            <a href="https://www.google.com/" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/google.png" alt="youtube logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4 id="date">.</h4>
+        <h4>&copy; Carlos Gerez 2020
+            <a id="final" href="https://www.newsbreak.com/idaho/fish-haven">News Break more Local News</a></h4>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Weather for Soda Springs with 5 days forecast">
+    <title>Soda Springs</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito%7cUbuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    </script>
+    <script src="js/responsive.js"></script>
+    <script src="js/windChill.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/small.css">
+    <link type="text/css" rel="stylesheet" href="css/medium.css">
+    <link type="text/css" rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="renderDate();  windChills(); apiCall('5607916'); setActivity('Soda Springs'); ">
+    <div id="top">
+        <div class="message">
+            <h3>Saturday = Preston Pancakes in the Park!</h3>
+            <h3>9:00 am Friday at the city park.</h3>
+        </div>
+        <header><img src="images/icon2.png" alt="logo">
+            <div class="headings">
+                <h1>Weather M Site</h1>
+                <div class="subtitles">Weather information made sky clear.</div>
+            </div>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="buttom" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="https://carlosdgerez.github.io/lesson-11/">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li class="active"><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <a>
+            </a>
+        </nav>
+    </div>
+    <main>
+
+        <h2 class="title">Soda Springs Idaho</h2>
+        <hr>
+        <section class="midle">
+            <div class="main_img">
+                <img class="home_img" src="images/pic3.jpg" alt="image of the city of Preston">
+                <section class="banner">
+
+                    <h2 id="bannerTitle"> Weather Summary</h2>
+                    <hr>
+                    <h3>Currently: <span class="info" id="current"></span></h3>
+                    <h3>Current Temp: <span class="info" id="temp"></span>&#176;F</h3>
+                    <h3>Wind Chill: <span class="info" id="chill"></span>&#176;F</h3>
+                    <h3>Humidity: <span class="info" id="humidity"></span>%</h3>
+                    <h3>Wind Speed: <span class="info" id="wind"></span>MPH</h3>
+                </section>
+            </div>
+            <br>
+            <div>
+                <h2 class="forecast">5 Days Forecast</h2>
+            </div>
+            <div class="flex">
+                <div class="flex-col">
+                    <span class="col-head" id="day1"></span>
+                    <img class="img-col" id="icon1" src="#" alt="#">
+                    <span class="data" id="temp1"></span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="day2"></span>
+                    <img class="img-col" id="icon2" src="#" alt="#">
+                    <span class="data" id="temp2"></span>
+
+                </div>
+
+                <div class="flex-col">
+                    <span class="col-head" id="day3"></span>
+                    <img class="img-col" id="icon3" src="#" alt="#">
+                    <span class="data" id="temp3"></span>
+
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="day4"></span>
+                    <img class="img-col" id="icon4" src="#" alt="#">
+                    <span class="data" id="temp4"></span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="day5"></span>
+                    <img class="img-col" id="icon5" src="#" alt="#">
+                    <span class="data" id="temp5"></span>
+                </div>
+            </div>
+            <br>
+            <div class="cards2"></div>
+            <div class="article">
+                <img class="img-center" src="images/pic4.jpg" alt="image two persons talking">
+                <div class="articlebody">
+                    <h3>Soda Springs</h3>
+                    <h4>Curiosity on the Oregon Trail</h4>
+                    <p>Located along a shortcut on the Oregon-California Trail off of the main route to Fort Hall, Idaho is Soda Springs. These natural bubbling pools of carbonated water, caused by ancient volcanic activity, were first called “Beer Springs”.
+                        Visited by local Indians, fur traders, and trappers prior to the days of the Oregon Trail emigrations, the springs were rightfully considered to be one of the marvels of the overland trails. At the time that pioneers were headed
+                        west for California and Oregon, there was an abundance of springs and water in the area and the area became known as the “Oregon Trail Oasis.” Emigrants frequently took advantage of the hot water to wash clothes, bathing, and medicinal
+                        purposes, often noting the picturesque scenery of the area and the smell that came from the springs. On July 24, 1838, Sarah White Smith stated: “Traveled… along the bank of the Bear River & are encamped at Soda Springs. This is
+                        indeed a curiosity. The water tastes like soda water, especially artificially prepared. The water is bubbling and foaming like boiling water. I drank of it… We find it excellent for baking bread, no preparation of water is necessary.
+                        Take it from the fountain & the bread is as light as any prepared with yeast.” From: Legends of America.com</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="headingmap">
+                    <iframe class="mapsmall" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d315891.9684095704!2d-111.87585630687067!3d42.64331060058015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1593804945651!5m2!1sen!2s" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0" width="305" height="285"></iframe>
+
+                    <iframe class="maplarge" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d315891.9684095704!2d-111.87585630687067!3d42.64331060058015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1593804945651!5m2!1sen!2s" width="400" height="410"
+                        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="contain">
+                    <div class="contact">
+                        <h5 class="firstline">Weather M Site</h5>
+                        <h5>30 N 1st E</h5>
+                        <h5>Preston, ID 83263</h5>
+                        <h5> &#x260E; 999.999.9999</h5>
+                        <h5>www.watwind.com</h5>
+                        <div class="contacticons">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/facebook.png" alt="facebook logo"></a>
+                            <a href="https://no.pinterest.com/" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/pinterest.png" alt="pinterest logo logo">
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/youtube.png" alt="youtube logo">
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/twiter.png" alt="youtube logo">
+                            </a>
+                            <a href="https://www.google.com/" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/google.png" alt="youtube logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4 id="date">.</h4>
+        <h4>&copy; Carlos Gerez 2020 |
+            <a id="final" href="https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=42.6544&lon=-111.6047&zoom=12">Openweather Soda Springs Map</a>
+        </h4>
+    </footer>
+
+</body>
+
+</html>

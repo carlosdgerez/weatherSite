@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Weather report for the city of Preston with local news.">
+    <title>Preston</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito%7cUbuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="js/lazy.js" defer></script>
+
+    </script>
+    <script src="js/fonts.js"></script>
+
+    <script src="js/windChill.js"></script>
+    <script src="js/responsive.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/small.css">
+    <link type="text/css" rel="stylesheet" href="css/medium.css">
+    <link type="text/css" rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="renderDate(); loadFonts();">
+    <div id="top">
+        <div class="message">
+            <h3>Saturday = Preston Pancakes in the Park!</h3>
+            <h3>9:00 am Friday at the city park.</h3>
+        </div>
+        <header><img src="images/icon2.png" alt="logo">
+            <div class="headings">
+                <h1>Weather M Site</h1>
+                <div class="subtitles">Weather information made sky clear.</div>
+            </div>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="buttom" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="https://carlosdgerez.github.io/lesson-11/">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <a>
+            </a>
+        </nav>
+    </div>
+    <h2 class="title">Weather Gallery</h2>
+    <hr>
+
+
+    <div id="grid">
+
+        <div class="box1">
+            <picture>
+                <img src="https://via.placeholder.com/300x400/808080.png" data-src="images/weather1.jpg" alt="science">
+            </picture>
+            <p>Fall In Red.</p>
+        </div>
+        <div class="box2">
+            <picture>
+                <img src="https://via.placeholder.com/300x400/808080.png" data-src="images/weather2.jpg" alt="science">
+            </picture>
+            <p>Mountain Spring.</p>
+        </div>
+        <div class="box3">
+            <picture>
+                <img src="https://via.placeholder.com/300x400/808080.png" data-src="images/weather3.jpg" alt="science">
+            </picture>
+            <p>Road in Fall.</p>
+        </div>
+        <div class="box4">
+            <picture>
+                <img src="https://via.placeholder.com/300x400/808080.png" data-src="images/weather4.jpg" alt="science">
+            </picture>
+            <p>Cumulus Nimbus.</p>
+        </div>
+
+        <div class="box5">
+            <picture>
+                <img src="https://via.placeholder.com/300x400/808080.png" data-src="images/weather5.jpg" alt="science">
+            </picture>
+            <p>Summer Beach.</p>
+        </div>
+
+        <div class="box6">
+            <picture>
+                <img src="https://via.placeholder.com/300x400/808080.png" data-src="images/weather6.jpg" alt="science">
+            </picture>
+            <p>A White Winter.</p>
+        </div>
+        <div class="box7">
+            <picture>
+                <img src="https://via.placeholder.com/300x400/808080.png" data-src="images/weather7.jpg" alt="science">
+            </picture>
+            <p>Storm in Summer.</p>
+        </div>
+        <div class="box8">
+            <picture>
+                <img src="https://via.placeholder.com/300x400/808080.png" data-src="images/weather8.jpg" alt="science">
+            </picture>
+            <p>Planet Earth from Space.</p>
+        </div>
+        <div class="box9">
+            <picture>
+                <img src="https://via.placeholder.com/300x400/808080.png" data-src="images/weather9.jpg" alt="science">
+            </picture>
+            <p>Winter Storm.</p>
+        </div>
+
+
+    </div>
+
+
+
+
+    <main>
+
+
+        <div class="grid clearfix">
+            <div class="headingmap">
+                <iframe class="mapsmall" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d47369.91461977414!2d-111.90718304154487!3d42.09419786632367!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1593806687196!5m2!1sen!2s" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0" width="405" height="385"></iframe>
+                <iframe class="maplarge" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d47369.91461977414!2d-111.90718304154487!3d42.09419786632367!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1593806687196!5m2!1sen!2s" width="600" height="410" allowfullscreen=""
+                    aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="contain">
+                <div class="contact">
+                    <h5 class="firstline">Weather M Site</h5>
+                    <h5>30 N 1st E</h5>
+                    <h5>Preston, ID 83263</h5>
+                    <h5> &#x260E; 999.999.9999</h5>
+                    <h5>www.watwind.com</h5>
+                    <div class="contacticons">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                            <img class="imgicon" src="images/facebook.png" alt="facebook logo"></a>
+                        <a href="https://no.pinterest.com/" target="_blank" rel="noopener">
+                            <img class="imgicon" src="images/pinterest.png" alt="pinterest logo logo">
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                            <img class="imgicon" src="images/youtube.png" alt="youtube logo">
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener">
+                            <img class="imgicon" src="images/twiter.png" alt="youtube logo">
+                        </a>
+                        <a href="https://www.google.com/" target="_blank" rel="noopener">
+                            <img class="imgicon" src="images/google.png" alt="youtube logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <h4 id="date">.</h4>
+        <h4>&copy; Carlos Gerez 2020
+            <a id="final" href="https://www.byui.edu/">BYUI</a></h4>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+@media only screen and (min-width: 60em) {
+    header img {
+        width: 10%;
+    }
+    .img-center {
+        width: 35%;
+    }
+    .banner {
+        top: 20%;
+        right: 60%;
+        line-height: 2.5vw;
+    }
+    .mapsmall {
+        display: none;
+    }
+    .maplarge {
+        display: block;
+    }
+    #grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "one two three" "four five six" "seven eight nine";
+    }
+    .box1:hover {
+        box-shadow: 0 0 50px #333;
+        border-radius: 4px;
+    }
+    .box2:hover {
+        box-shadow: 0 0 50px #333;
+        border-radius: 4px;
+    }
+    .box3:hover {
+        box-shadow: 0 0 50px #333;
+        border-radius: 4px;
+    }
+    .box4:hover {
+        box-shadow: 0 0 50px #333;
+        border-radius: 4px;
+    }
+    .box5:hover {
+        box-shadow: 0 0 50px #333;
+        border-radius: 4px;
+    }
+    .box6:hover {
+        box-shadow: 0 0 50px #333;
+        border-radius: 4px;
+    }
+    .box7:hover {
+        box-shadow: 0 0 50px #333;
+        border-radius: 4px;
+    }
+    .box8:hover {
+        box-shadow: 0 0 50px #333;
+        border-radius: 4px;
+    }
+    .box9:hover {
+        box-shadow: 0 0 50px #333;
+        border-radius: 4px;
+    }
+    #hometown {
+        width: 75%;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "prestoninfo fishhaveninfo sodaspringinfo" "preston fishhaven sodaspring";
+    }
+    section {
+        display: block;
+        margin: 20px;
+    }
+}

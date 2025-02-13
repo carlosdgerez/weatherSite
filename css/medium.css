@@ -1,0 +1,162 @@
+        @media only screen and (min-width: 34.5em) {
+            .navigation {
+                display: flex;
+            }
+            .navigation li {
+                display: block;
+                flex: 1 1 auto;
+            }
+            .navigation a {
+                text-align: center;
+            }
+            .navigation li:first-child {
+                display: none;
+            }
+            .flex {
+                display: flex;
+                flex-flow: row wrap;
+                width: 80%;
+            }
+            .flex-col {
+                width: 10%;
+                flex: 1 1 auto;
+                background-color: white;
+            }
+            .flex-col,
+            .column-col {
+                border-bottom: 1px solid #333;
+                border-left: 1px solid #333;
+                text-align: center;
+            }
+            .data {
+                display: block;
+                padding: 0 5px 5px;
+                font-size: 0.8rem;
+                text-align: center;
+            }
+            .col-head {
+                font-weight: 700;
+                font-size: 1rem;
+                background-color: #f6dc26ff;
+                color: black;
+            }
+            .col-head {
+                display: block;
+                padding: 5px;
+                border-bottom: 1px solid #333;
+                border-top: 1px solid #333;
+                text-align: center;
+            }
+            .img-col {
+                width: 29%;
+                margin-right: 0;
+            }
+            .flex {
+                border-right: 1px solid #333;
+                background-color: white;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+            }
+            .midle {
+                max-width: 75%;
+            }
+            header img {
+                width: 16%;
+            }
+            .article {
+                line-height: 2.15;
+                padding: 20px;
+            }
+            .img-center {
+                width: 40%;
+                float: right;
+            }
+            .headingmap {
+                display: block;
+            }
+            .maplarge {
+                display: none;
+            }
+            .grid {
+                display: inline-block;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            }
+            .headingmap {
+                background-color: transparent;
+            }
+            .contacticons {
+                margin: 0 auto;
+                padding: 0;
+                width: 80%;
+            }
+            footer {
+                margin-top: 30px;
+            }
+            .banner {
+                right: 50%;
+            }
+            .flex img {
+                padding: 0px;
+            }
+            .midle div {
+                padding: 0;
+            }
+            .forecast {
+                display: block;
+            }
+            #grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "one two" " three four" "five six" "seven eight" "nine nine";
+            }
+            .imgicon {
+                width: 10%;
+            }
+            section:nth-child(1) img {
+                grid-area: preston;
+            }
+            section:nth-child(2) img {
+                grid-area: fishhaven;
+            }
+            section:nth-child(3) img {
+                grid-area: sodaspring;
+            }
+            section:nth-child(1) .information {
+                grid-area: prestoninfo;
+            }
+            section:nth-child(2) .information {
+                grid-area: fishhaveninfo;
+            }
+            section:nth-child(3) .information {
+                grid-area: sodaspringinfo;
+            }
+            section {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                max-width: 117%;
+                grid-template-rows: auto;
+                grid-template-areas: "prestoninfo preston" "fishhaven fishhaveninfo" "sodaspringinfo sodaspring";
+            }
+            section .information h1,
+            p,
+            h2 {
+                font-size: 1rem;
+            }
+            .banner {
+                font-size: 1.2vw;
+                display: block;
+                line-height: 1.68vw;
+            }
+            div.cards2 {
+                margin-top: 15px;
+                margin-bottom: 25px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                max-width: 70%;
+            }
+            hr {
+                max-width: 60%;
+                border: 1px solid green;
+                border-radius: 5px;
+            }
+        }
